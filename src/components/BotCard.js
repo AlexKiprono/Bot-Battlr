@@ -12,7 +12,7 @@ const botTypeClasses = {
 function BotCard({ bot, botFunction}) {
 
   const handleDelete = () => {
-    fetch("https://bot-battlr-8wp9.onrender.com/bots" + bot.id, {
+    fetch("http://localhost:8002/bots/" + bot.id, {
       method: "DELETE"
     })
     .then(() => {
